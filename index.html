@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <text y='.9em' font-size='90'>🎀</text>
+</svg>">
+  <title>Valentine Proposal 💘</title>
+  
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+    }
+
+    /* 🌈 UNIQUE ROMANTIC BACKGROUND */
+    body {
+      min-height: 100vh;
+      background: linear-gradient(
+        -45deg,
+        #ff6b81,
+        #ff9ff3,
+        #feca57,
+        #ff9a9e
+      );
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 💖 FLOATING HEARTS LAYER */
+    body::before {
+      content: "💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕💖 💕 💘 💓 💗 💞 💝 💖 💕";
+      position: absolute;
+      inset: 0;
+      font-size: 70px;
+      opacity: 0.12;
+      animation: heartsFloat 18s linear infinite;
+      pointer-events: none;
+      white-space: pre-wrap;
+      text-align: center;
+    }
+
+    @keyframes heartsFloat {
+      from { transform: translateY(100%); }
+      to { transform: translateY(-120%); }
+    }
+
+    /* ✨ SOFT GLOW OVERLAY */
+    body::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.25), transparent 60%);
+      pointer-events: none;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 25px;
+      border-radius: 25px;
+      text-align: center;
+      width: 90%;
+      max-width: 380px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.25);
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-gif img {
+      height: 250px;
+      border-radius: 18px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(255,77,109,.3);
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    #yes-button, #no-button {
+      border: none;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    #yes-button {
+      background: linear-gradient(135deg, #ff4d6d, #ff758c);
+      color: white;
+      box-shadow: 0 5px 15px rgba(255,77,109,.5);
+    }
+
+    #no-button {
+      background: linear-gradient(135deg, #636e72, #2d3436);
+      color: white;
+    }
+
+    #yes-button:hover,
+    #no-button:hover {
+      transform: scale(1.15);
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #success-message {
+      color: #ff4d6d;
+      text-shadow: 1px 1px 3px rgba(255,77,109,.3);
+    }
+
+    .creator {
+      text-decoration: none;
+      color: #555;
+    }
+
+    .creator:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="banner-gif">
+      <img id="banner" src="./public/images/Panda.jpg" alt="banner" />
+    </div>
+
+    <h1 id="question-heading">Will you be my Valentine? 💖🥺</h1>
+
+    <div class="buttons">
+      <button id="yes-button"><p>Yes 💕</p></button>
+      <button id="no-button"><p>No 😢</p></button>
+    </div>
+
+    <div class="message">
+      <h2 id="success-message">Yeepppieee 😍💘 See you soooonnnn :3</h2>
+    </div>
+  </div>
+
+  <script src="./public/js/script.js"></script>
+</body>
+</html>
